@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Usuários</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="login.html" style="text-decoration: none; color: inherit;">Mesa Up</a></h1>
+    <nav>
+      <a href="mesa.html">Mesas</a>
+      <a href="comanda.html">Comandas</a>
+      <a href="produto.html">Produtos</a>
+      <a href="usuario.html" class="ativo">Usuários</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="criar">
+      <input type="text" id="nome-usuario" placeholder="Nome">
+      <input type="email" id="email-usuario" placeholder="Email">
+      <select id="perfil-usuario">
+        <option value="ADMIN">Admin</option>
+        <option value="GARCOM">Garçom</option>
+        <option value="CAIXA">Caixa</option>
+      </select>
+      <button onclick="criarUsuario()">Criar Usuário</button>
+    </section>
+
+    <section id="usuarios-container"></section>
+
+  </main>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/usuario.js"></script>
+
+</body>
+</html>

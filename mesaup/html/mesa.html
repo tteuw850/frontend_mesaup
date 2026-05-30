@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mesas</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="login.html" style="text-decoration: none; color: inherit;">Mesa Up</a></h1>
+    <nav>
+      <a href="mesa.html" class="ativo">Mesas</a>
+      <a href="comanda.html">Comandas</a>
+      <a href="produto.html">Produtos</a>
+      <a href="usuario.html">Usuários</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="filtros">
+      <button onclick="listaMesas()">Todas</button>
+      <button onclick="buscaMesaPorStatus('LIVRE')">Livres</button>
+      <button onclick="buscaMesaPorStatus('OCUPADA')">Ocupadas</button>
+      <button onclick="buscaMesaPorStatus('RESERVADA')">Reservadas</button>
+    </div>
+
+    <section class="criar">
+      <input type="number" id="numero-mesa" placeholder="Número da mesa">
+      <button onclick="criarMesa()">Criar Mesa</button>
+    </section>
+
+    <section id="mesas-container"></section>
+
+  </main>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/mesa.js"></script>
+
+</body>
+</html>

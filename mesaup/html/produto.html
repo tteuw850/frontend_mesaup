@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Produtos</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="login.html" style="text-decoration: none; color: inherit;">Mesa Up</a></h1>
+    <nav>
+      <a href="mesa.html">Mesas</a>
+      <a href="comanda.html">Comandas</a>
+      <a href="produto.html" class="ativo">Produtos</a>
+      <a href="usuario.html">Usuários</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="criar">
+      <input type="text" id="nome-produto" placeholder="Nome do produto">
+      <input type="number" id="preco-produto" placeholder="Preço" step="0.01">
+      <button onclick="criarProduto()">Adicionar Produto</button>
+    </section>
+
+    <section id="produtos-container"></section>
+
+  </main>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/produto.js"></script>
+
+</body>
+</html>

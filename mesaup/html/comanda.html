@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Comandas</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="login.html" style="text-decoration: none; color: inherit;">Mesa Up</a></h1>
+    <nav>
+      <a href="mesa.html">Mesas</a>
+      <a href="comanda.html" class="ativo">Comandas</a>
+      <a href="produto.html">Produtos</a>
+      <a href="usuario.html">Usuários</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="criar">
+      <select id="select-mesa"></select>
+      <select id="select-usuario"></select>
+      <button onclick="abrirComanda()">Abrir Comanda</button>
+      <button onclick="buscarPorMesa()" class="btn">Ver Comanda da Mesa</button>
+    </section>
+
+    <section id="comanda-container"></section>
+
+    <hr style="margin: 24px 0; border-color: #eee;">
+
+    <h3 style="margin-bottom: 12px; font-size: 15px;">Adicionar Item</h3>
+    <section class="criar">
+      <input type="number" id="input-comanda-id" placeholder="ID da comanda">
+      <select id="select-produto"></select>
+      <input type="number" id="input-quantidade" placeholder="Quantidade" min="1" value="1">
+      <button onclick="adicionarItem()">Adicionar</button>
+    </section>
+
+  </main>
+
+  <script src="../js/api.js"></script>
+  <script src="../js/comanda.js"></script>
+
+</body>
+</html>
