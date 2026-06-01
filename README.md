@@ -8,7 +8,6 @@ Sistema web de gerenciamento de mesas, comandas, e pedidos em restaurantes.
 * Html
 * Css
 * JavaScript
-* Bootstrap
 * API Rest
 
 ## Tela inicial
